@@ -1,10 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
+import ThemeProvider from '../components/themeProvider'
 import HomePage from '../pages/homePage'
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage/>} />
+      <ThemeProvider>
+        <Route path="/" element={<HomePage/>} />
+      </ThemeProvider>
     </Routes>
   )
 }
