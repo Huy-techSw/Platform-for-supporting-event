@@ -1,17 +1,20 @@
-import Benefits from "../components/benefits"
-import FeatureShowcase from "../components/featureShowcase"
-import Footer from "../components/footer"
-import Hero from "../components/hero"
+import Benefits from "../components/benefits";
+import FeatureShowcase from "../components/featureShowcase";
+import Footer from "../components/footer";
+import Hero from "../components/hero";
+import ThemeProvider from "../components/themeProvider";
 
-const HomePage = () => {
+
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
+    <ThemeProvider>
+      <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
         <Hero />
         <FeatureShowcase />
         <Benefits />
         <Footer />
       </main>
+    </ThemeProvider>
   )
 }
 
-export default HomePage
