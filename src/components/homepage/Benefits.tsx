@@ -4,20 +4,20 @@ import { motion } from 'framer-motion'
 
 const benefits = [
   {
-    title: 'Guests',
-    features: ['View event list', 'Register account', 'See event attendance'],
+    title: 'Event Management',
+    features: ['Easily create and manage university events'],
   },
   {
-    title: 'Members',
-    features: ['Book tickets', 'Manage transactions', 'Event check-in/out', 'Provide feedback'],
+    title: 'Attendee Tracking',
+    features: ['Monitor registrations and check-ins in real-time'],
   },
   {
-    title: 'Organizers',
-    features: ['Manage event info', 'View event statistics', 'Manage guest tables', 'QR code scanning'],
+    title: 'Feedback System',
+    features: ['Collect and analyze event feedback'],
   },
   {
-    title: 'Admins',
-    features: ['Manage accounts', 'Oversee events', 'Handle transactions'],
+    title: 'Engagement Tools',
+    features: ['Increase participant interaction and satisfaction'],
   },
 ]
 
@@ -31,7 +31,7 @@ export default function Benefits() {
           transition={{ duration: 0.6 }}
           className="text-4xl font-bold mb-12 text-center"
         >
-          Benefits for All Users
+          Key Features
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
