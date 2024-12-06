@@ -40,7 +40,7 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-            PSE
+            EVENTIFY
           </Link>
           <nav className="hidden md:flex space-x-4 items-center">
             {menuItems.map((item) => (
